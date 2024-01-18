@@ -15,12 +15,14 @@ inbox2.addEventListener("change",calc2);
 
 function checkNumber(){
     const guess = numberbox.value;
+    numberbox.style.backgroundColor='red';
     if (guess < randnum){
         feedbackbox.innerText="too low";
     } else if (guess > randnum){
         feedbackbox.innerText = "too high";
     } else {
         feedbackbox.innerText = "correct!";
+        numberbox.style.backgroundColor='GreenYellow';
     }
 }
 

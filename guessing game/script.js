@@ -13,6 +13,9 @@ inbox1.addEventListener("change",calc1);
 funcbox.addEventListener("change",calc2);
 inbox2.addEventListener("change",calc2);
 
+inbox1.value=0;
+inbox2.value=0;
+
 function checkNumber(){
     const guess = numberbox.value;
     if (guess < randnum){
